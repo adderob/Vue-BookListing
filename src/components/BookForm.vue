@@ -7,7 +7,7 @@
 </template>
 <script>
 export default{
-  name: "BookFarm",
+  name: "BookForm",
   props: ['books'],
   data () {
     bookTitle = '',

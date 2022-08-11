@@ -2,7 +2,7 @@
   <div>
     <h1>{{ title }}</h1>
     <ul>
-      <book-farm @addBook="appendBook" />
+      <book-form @addBook="appendBook" />
       <book-item v-for="book in books" :book="book" />
     </ul>
   </div>
@@ -10,13 +10,13 @@
 
 <script>
 import BookItem from './BookItem';
-import BookFarm from './BookFarm';
+import BookForm from './BookForm';
 
   export default {
     name: "BookList",
     components: {
       BookItem,
-      BookFarm},
+      BookForm},
     methods: {
       appendBook(bookTitle,bookAuthor){
         this.books.push({ title: bookTitle, author: bookAuthor })
