@@ -1,17 +1,10 @@
 <template>
-  <li v-for="book in books">{{ book.title }} : {{ book.author }}</li>
+  <li>{{ book.title }} : {{ book.author }}</li>
 </template>
 <script>
 export default{
   name: "BookItem",
-  data () {
-    return {
-      books:
-      [
-        {book: "book"}
-      ]
-    }
-  }
+  props: ['book']
 }
 </script>
 <style>
